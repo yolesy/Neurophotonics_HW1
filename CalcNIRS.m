@@ -75,8 +75,8 @@ I2 = d(:,21:40);     % second wavelength
 I01 = mean(I1(1:10,:),1);
 I02 = mean(I2(1:10,:),1);
 
-OD1 = -log(I1 ./ I01);
-OD2 = -log(I2 ./ I02);
+OD1 = -log10(I1 ./ I01);
+OD2 = -log10(I2 ./ I02);
 
 dHbR = zeros(size(I1));
 dHbO = zeros(size(I1));
